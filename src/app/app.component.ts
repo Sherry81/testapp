@@ -23,7 +23,7 @@ export class AppComponent {
    if(localStorage.getItem('results')){
      this.results = this.getUser()
    }
-   interval(2000).subscribe(x => {
+   interval(5000).subscribe(x => {
       this.dataService.addSymbol().subscribe(val=>{
         for(let apiVal of val){
           for(let j=0;j<this.results.length;j++){
