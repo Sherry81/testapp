@@ -9,7 +9,6 @@
       </tr>
     </thead>
     <tbody>
-      <!-- <tr [attr.id]="'resultsRow'+i" [ngStyle]="{'background-color': lastChanged > 0 ? 'green' :  'red' }" *ngFor="let result of results; let i = index"> -->
         <tr [attr.id]="'resultsRow'+i" [ngStyle]="!lastChanged && {'background-color':'white'} || lastChanged==0 && {'background-color':'white'} || lastChanged>0 && {'background-color':'green'}||lastChanged < 0 && {'background-color':'red'}" *ngFor="let result of results; let i = index"> 
         <td>{{result.symbol}}</td>
         <td>{{result.price}}</td>

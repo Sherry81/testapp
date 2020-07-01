@@ -25,7 +25,6 @@ export class ModalContentComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    console.log(this.results)
   }
 
   async addSymbol(){
@@ -44,7 +43,6 @@ export class ModalContentComponent implements OnInit {
               if(this.symbol == val[i].symbol){
                 this.foundResult = val[i];
                 this.event.emit({ data: this.foundResult });
-                console.log(this.foundResult)
                 this.bsModalRef.hide();
                 break;
               }
