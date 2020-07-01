@@ -1,0 +1,17 @@
+<div class="modal-body">
+    <div class="row">
+        <div class="col-md">
+            <h4>Add Symbol</h4>
+        </div>
+        <div class="col-md text-right">
+            <button class="btn btn-danger" (click)="closeModal()">CLOSE</button>
+        </div>
+    </div>
+        <div class="col-md text-center">
+            <label>Symbol Name</label>
+        </div>
+        <div class="col-md text-center">
+            <input type="text" class="form-control" style="width: 30%; margin: auto;" [(ngModel)]="symbol">
+            <button class="btn btn-primary mt-1" (click)="addSymbol()">ADD</button>
+        </div>
+<div>
